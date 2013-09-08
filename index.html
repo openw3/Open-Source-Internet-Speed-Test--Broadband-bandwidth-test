@@ -1,0 +1,44 @@
+<html>
+<head>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="speed.js"></script>
+<link rel="stylesheet" href="sp.css" />
+
+  <link href='http://fonts.googleapis.com/css?family=Roboto+Condensed' rel='stylesheet' type='text/css' />
+</head>
+
+
+<body>
+
+<center>
+<div id="imageContainer"></div><div style="font-size:50px" id="some_text">OpenSpeedTest v1.2</div>
+
+<p>Your Ping : <b id='getping'> </b> Ms </p> 
+<p>Download Test : <b id='down'> </b> Mbps </p>
+<p>Upload Test :<b id='Upload'> </b> Mbps </p> 
+
+
+
+<input id="starttest" value="Click Me ! To Start TEST"  type="button" />
+
+<p><b id='Status'> </b> </p>
+</center>
+
+
+
+<script>
+$('#starttest').click(function(event) {
+    event.preventDefault();
+	i = 0;
+    if (!$(this).hasClass("clicked"))
+		
+		starttest();
+		
+        $(this).addClass("clicked");
+});
+
+
+</script>
+
+</body>
+</html>
